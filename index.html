@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.academia.png">
+    <title>Academia Comunitária</title>
+</head>
+
+<header>
+    <div class="header-logo">
+        <img src="Logo.Academia.png" alt="Logo do Site" style="margin-top: 20px;">
+    </div>
+</header>
+
+<body>
+    <div class="container">
+        <h1>Sistema de Treino Personalizado</h1>
+        <form id="anamneseForm">
+            <label for="genero">Gênero:</label>
+            <select id="genero" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" min="12" max="100" required>
+
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" min="30" max="200" step="0.1" required>
+
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" min="100" max="250" required>
+
+            <label for="hipertenso">Você é hipertenso(a)?</label>
+            <select id="hipertenso" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="sedentario">Você é sedentário(a)?</label>
+            <select id="sedentario" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label for="tempoPratica">Há quantos meses ou anos você pratica atividade física?</label>
+            <input type="text" id="tempoPratica" placeholder="Ex: 6 meses ou 2 anos" required>
+
+            <label for="nivelCondicionamento">Nível de condicionamento físico:</label>
+            <select id="nivelCondicionamento" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="avancado">Avançado</option>
+            </select>
+
+            <label for="objetivo">Informe o seu objetivo:</label>
+            <select id="objetivo" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="perda_peso">Perda de peso</option>
+                <option value="hipertrofia">Hipertrofia</option>
+                <option value="definicao_muscular">Definição muscular</option>
+            </select>
+
+            <label for="diasDisponiveis">Dias disponíveis por semana:</label>
+            <input type="number" id="diasDisponiveis" min="1" max="7" required>
+
+            <button type="submit">Gerar Treino</button>
+        </form>
+
+        <div id="resultado" class="resultado"></div>
+        
+        <button id="btnImprimir" onclick="window.print()" style="display: none;">Imprimir Treino</button>
+    </div>
+      
+     <script src="script.js"></script>
+</body>
+</html>
