@@ -1,4 +1,4 @@
-# Prototype of a strength training system for users of the community gym in Planaltina - DF
+# Protótipo de um sistema de treinos de musculação para usuários da academia comunitária de Planaltina - DF
 
 ## The system generates personalized training plans based on user responses. The code adapts workouts to different profiles and health conditions. An intuitive interface makes it easy to gather information and create workouts.
 
